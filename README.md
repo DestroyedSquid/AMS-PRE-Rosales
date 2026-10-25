@@ -12,5 +12,5 @@ Desarrollar un sistema de gestión de pedidos con un 100% de integridad referenc
 * **Procesamiento de Pedidos (orders):** Creación de órdenes (user_id, product_id, quantity, order_date) y consulta de historial.
 
 ## Estructura del Repositorio
-* `/diagramas`: Contiene los archivos fuente de PlantUML (Casos de uso, Actividades, Clases, ER).
-* `/evidencias`: Contiene las capturas de pantalla de la gestión del proyecto en Jira (Backlog, Sprints, Tablero Scrum y Gráficas de estado).
+* `/PreExamen2RosalesAMS`: Contiene los archivos fuente de PlantUML (Casos de uso, Actividades, Clases, ER).
+* `/JIRA`: Contiene las capturas de pantalla de la gestión del proyecto en Jira (Backlog, Sprints, Tablero Scrum y Gráficas de estado).
