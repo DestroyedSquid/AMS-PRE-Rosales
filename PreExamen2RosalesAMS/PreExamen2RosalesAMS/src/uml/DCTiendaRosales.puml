@@ -1,0 +1,26 @@
+@startuml
+class User{
+    -id_user : String
+    -name : String
+    -email : String
+    --
+    +validateUser() : void
+}
+class Product{
+    -id_product : String
+    -prod_name : String
+    -price : float
+}
+class Order{
+    #id_user : String
+    #id_product : String
+    -quantity : int
+    -orderState : String
+    -orderDate : String
+    --
+    +orderHistory() : void
+    +createOrder() : void
+}    
+Order "N" == "1" User
+Order "1" == "N" Product
+@enduml 

@@ -1,0 +1,14 @@
+@startuml
+left to right direction
+actor "Usuario" as user
+rectangle "Sistema Tienda Rosales"{
+    usecase "Seleccionar producto disponible" as UC1
+    usecase "Generar pedido" as UC2
+    usecase "Visualizar lista de productos" as UC3
+    usecase "Consultar historial de pedido" as UC4
+}
+user --> UC1
+UC1 ..> UC2 : <<include>>
+user --> UC4
+user --> UC3
+@enduml

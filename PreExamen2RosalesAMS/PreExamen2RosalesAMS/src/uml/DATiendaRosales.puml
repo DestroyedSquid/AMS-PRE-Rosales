@@ -1,0 +1,21 @@
+@startuml
+start
+:Validar Usuario;
+if(¿Es valido?) then(Si)
+    :Acceder Sistema;
+    :Ver productos;
+    if(¿Quieres ver el historial?) then (Sí)
+        :Ver historial;
+    else (No)
+        :Ver productos;
+    end if
+    if(¿Quieres hacer un pedido?) then(Sí)
+        :Realizar pedido;
+    else (No)
+        :Ver productos;
+    end if
+else (No)
+    :Mostrar Error;
+end if
+stop
+@enduml

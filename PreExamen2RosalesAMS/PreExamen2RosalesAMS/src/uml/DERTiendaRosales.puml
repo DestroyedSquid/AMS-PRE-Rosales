@@ -1,0 +1,22 @@
+@startuml
+entity User{
+    id_user : STRING <<PK>>
+    name : VARCHAR(100)
+    email : VARCHAR(100)
+}
+entity Product{
+    id_product : STRING <<PK>>
+    prod_name : VARCHAR(100)
+    price : VARCHAR(100)
+}
+entity Order{
+    id_user : STRING <<FK>>
+    id_product : STRING <<FK>>
+    id_order: STRING <<PK>>
+    quantity : VARCHAR(100)
+    orderState : VARCHAR(100)
+    orderDate : DATE
+}    
+User ||==o{ Order
+Order ||==o{ Product
+@enduml 
